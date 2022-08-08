@@ -1,4 +1,4 @@
-.controlPanel
+/* .controlPanel
 {
     font-family: 'Scada', sans-serif;
     position: absolute;
@@ -148,7 +148,7 @@
 #controlPanelElement5:hover
 {
     background-color: rgb(43, 43, 43);
-}
+} */
 
 #body{
     background-color: rgb(49, 55, 66);

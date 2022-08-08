@@ -39,9 +39,9 @@ function numbersToText()
     const captcha = document.getElementById("captchaId");
     captcha.innerText = randomNumbers;
     // document.body.replaceChild(captcha)
-    inputMaxLength();
-    autoEnter();
-    deleteLetters();
+    // inputMaxLength();
+    // autoEnter();
+    // deleteLetters();
 }
 function checker()
 {
@@ -213,54 +213,53 @@ function bestCaptchaToTextFunc()
 }
 bestTimeToTextFunc();
 bestCaptchaToTextFunc();
-function inputMaxLength()
-{
-    const limit = document.getElementById("limitValueId");
-    if(limit.checked === true)
-    {
-        $('#captchaInputId').attr('maxlength',  5);
-    }
-    else if(limit.checked === false)
-    {
-        $('#captchaInputId').attr('maxlength',  30);
-    }
-}
-function autoEnter()
-{
-    var inputField = document.getElementById("captchaInputId");
-    const autoEnter = document.getElementById("autoEnterValueId");
-    if(autoEnter.checked === true)
-    {
-        inputField.addEventListener("input", autoEnt);
+// function inputMaxLength()
+// {
+//     const limit = document.getElementById("limitValueId");
+//     if(limit.checked === true)
+//     {
+//         $('#captchaInputId').attr('maxlength',  5);
+//     }
+//     else if(limit.checked === false)
+//     {
+//         $('#captchaInputId').attr('maxlength',  30);
+//     }
+// }
+// function autoEnter()
+// {
+//     var inputField = document.getElementById("captchaInputId");
+//     const autoEnter = document.getElementById("autoEnterValueId");
+//     if(autoEnter.checked === true)
+//     {
+//         inputField.addEventListener("input", autoEnt);
 
-    }
-    else if(autoEnter.checked === false)
-    {
-        inputField.removeEventListener("input", autoEnt);
-    }
+//     }
+//     else if(autoEnter.checked === false)
+//     {
+//         inputField.removeEventListener("input", autoEnt);
+//     }
 
-}
-function autoEnt()
-{
-    const inputField = document.getElementById("captchaInputId").value;
-    if(inputField == randomNumbers)
-    {
+// }
+// function autoEnt()
+// {
+//     const inputField = document.getElementById("captchaInputId").value;
+//     if(inputField == randomNumbers)
+//     {
           
-          document.dispatchEvent(new KeyboardEvent('keydown', {
-            'keyCode': '13'
-          }));
-    }
-}
-function deleteLetters()
-{
-    const deleteLettersValue = document.getElementById("deleteLettersValueId")
-    if(deleteLettersValue.checked === true)
-    {
-        $(".captchaInput").keypress(function(event){
-            event = event || window.event;
-            if (event.charCode && event.charCode!=0 && event.charCode!=46 && (event.charCode < 48 || event.charCode > 57) )
-              return false;
-          });
-    }
-}
-let a;
+//           document.dispatchEvent(new KeyboardEvent('keydown', {
+//             'keyCode': '13'
+//           }));
+//     }
+// }
+// function deleteLetters()
+// {
+//     const deleteLettersValue = document.getElementById("deleteLettersValueId")
+//     if(deleteLettersValue.checked === true)
+//     {
+//         $(".captchaInput").keypress(function(event){
+//             event = event || window.event;
+//             if (event.charCode && event.charCode!=0 && event.charCode!=46 && (event.charCode < 48 || event.charCode > 57) )
+//               return false;
+//           });
+//     }
+// }

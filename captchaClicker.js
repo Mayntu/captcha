@@ -265,3 +265,4 @@ function deleteLetters()
 }
 let loh = document.getElementById("loh");
 console.log(loh);
+let button;

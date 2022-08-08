@@ -263,7 +263,3 @@ function deleteLetters()
           });
     }
 }
-let loh;
-loh=5;
-alert("loh");
-alert(loh);

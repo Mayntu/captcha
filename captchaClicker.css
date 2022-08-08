@@ -593,3 +593,39 @@
     top: -18px;
     left: 7px;
 }
+#x
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+#y
+{
+    position: absolute;
+    left: 0px;
+    top: 30px;
+}
+#plus
+{
+    position: absolute;
+    left: 0px;
+    top: 70px;
+}
+#minus
+{
+    position: absolute;
+    left: 0px;
+    top: 70px;
+}
+#mult
+{
+    position: absolute;
+    left: 0px;
+    top: 70px;
+}
+#del
+{
+    position: absolute;
+    left: 0px;
+    top: 70px;
+}
